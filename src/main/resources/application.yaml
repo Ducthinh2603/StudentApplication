@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:mydb
+#    url: jdbc:h2:file:~/data/demo;INIT=RUNSCRIPT FROM '${resource_path}/schema.sql'\;RUNSCRIPT FROM '${resource_path}/data.sql'
+#    url: jdbc:h2:file:~/data/demo
+    username: sa
+    password: password
+    driverClassName: org.h2.Driver
+    initialize: true
+#  jpa:
+#    database-platform: org.hibernate.dialect.H2Dialect
